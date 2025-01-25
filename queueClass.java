@@ -1,4 +1,4 @@
-// 672115045 Virawit Kongthong ADT Tutorial 4
+//672115045 Virawit Kongthong ADT Tutorial 4
 
 public class queueClass {
     public static void main(String[] args) {
