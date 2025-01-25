@@ -56,9 +56,15 @@ public class queueClass {
     }
 
     public void printQueue() {
+        System.out.print("[");
         for (int i = frontPointer; i < capacity; i++) {
-            System.out.print(queueArray[i] + " ");
+            if (i == capacity - 1) {
+                System.out.print(queueArray[i]);
+            } else {
+                System.out.print(queueArray[i] + ", ");
+            }
         }
+        System.out.print("]");
         System.out.printf("%3s" , "[first = " + frontPointer + ", rear = " + endPointer + ", length = " + size() + "]");
         System.out.println();
     }
